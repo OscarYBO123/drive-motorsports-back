@@ -18,7 +18,7 @@ import com.oybo.drive.motorsport.back.apirest.service.IVehiculoService;
 //lleva la anotacion de Restcontroller para indicar que es un controller.
 @RestController
 //lleva esta anotación para identificar de donde partira la URL
-@RequestMapping("/vehiculos")
+@RequestMapping("/api")
 public class VehiculoController {
 	
 	/*Se hace referencia del service
@@ -28,7 +28,7 @@ public class VehiculoController {
 	
 	private static final Logger LOGGER = LoggerFactory.getLogger(VehiculoController.class);
 	
-	@GetMapping(value="/todos")
+	@GetMapping(value="/vehiculos")
 	public List<VehiculoBean> getVehiculos() throws DriveMotorsportsException{
 		LOGGER.info("Entra a VehiculoController.getVehiculos");
 		List<VehiculoBean> vehiculos = new ArrayList<>();
