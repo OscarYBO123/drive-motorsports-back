@@ -10,7 +10,7 @@ public class VehiculoBean extends VehiculoComplementoBean{
 	private int id_vehiculo;
 	private String modelo;
 	private int anio;
-	private int marca;
+	private String marca;
 	private Double km;	
 	
 	public int getId_vehiculo() {
@@ -37,11 +37,11 @@ public class VehiculoBean extends VehiculoComplementoBean{
 		this.anio = anio;
 	}
 	
-	public int getMarca() {
+	public String getMarca() {
 		return marca;
 	}
 	
-	public void setMarca(int marca) {
+	public void setMarca(String marca) {
 		this.marca = marca;
 	}
 	

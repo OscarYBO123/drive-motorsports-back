@@ -6,6 +6,7 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,7 +15,7 @@ import com.oybo.drive.motorsport.back.apirest.excepcion.DriveMotorsportsExceptio
 import com.oybo.drive.motorsport.back.apirest.model.VehiculoBean;
 import com.oybo.drive.motorsport.back.apirest.service.IVehiculoService;
 
-
+@CrossOrigin(origins = {"http://localhost:4200"})
 //lleva la anotacion de Restcontroller para indicar que es un controller.
 @RestController
 //lleva esta anotación para identificar de donde partira la URL

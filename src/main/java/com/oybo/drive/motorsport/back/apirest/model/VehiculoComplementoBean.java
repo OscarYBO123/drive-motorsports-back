@@ -9,15 +9,15 @@ public class VehiculoComplementoBean implements Serializable{
 	 */
 	private static final long serialVersionUID = -1526885170131651047L;
 	
-	private int transmision;
+	private String transmision;
 	private String descripcion;
 	private byte[] imagen;
 	
-	public int getTransmision() {
+	public String getTransmision() {
 		return transmision;
 	}
 	
-	public void setTransmision(int transmision) {
+	public void setTransmision(String transmision) {
 		this.transmision = transmision;
 	}
 	
